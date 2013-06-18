@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>GeoApsoft Movil 1.0</title>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<link href="css/jquery.mobile.theme-1.3.1.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.mobile.structure-1.3.1.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+
+
+<script >
+	var page;
+	page=$(document);
+	page.bind("mobileinit",inicio);
+	//page.bind("taphold",press);//tap presionado
+	//page.bind("swipeleft",left);//tap hacia un lado
+	
+	function inicio(){
+		//setContenido("#contenido","rep_ger.html");
+		//setContenido('#left-panel','rep_menu_left.html')
+		//setContenido('#right-panel','rep_menu_der.html')
+		
+		//alert("funciona");
+		
+	}
+	
+	function setContenido2(div, html){
+		var x;
+		x=$(div);
+		x.html();
+	}
+	
+	function setContenido(div, page){
+		var x;
+		x=$(div);
+		x.load(page);
+	}
+	
+	
+	
+	
+	
+</script>
+
+
+<script src="js/jquery.mobile-1.3.1.js" type="text/javascript"></script>
+
+
+
+</head> 
+<body> 
+
+<div data-role="page" id="page" data-theme="b">
+	<div data-role="header" data-theme="e">
+		<h1>Apsoft Movil</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="geo.html" data-transition="slide">Reporte de Daños</a></li>
+            <li><a href="rep2.html" data-transition="slide">Reparaciones<span class="ui-li-count">5</span></a></li>
+			<li><a href="inv.html" data-transition="slide">Inventario</a></li>
+            <li><a href="cc.html" data-transition="slide">Control Consumo</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Megaproyectos</h4>
+	</div>
+</div>
+
+
+</body>
+</html>

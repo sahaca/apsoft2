@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>GeoApsoft Movil 1.0</title>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<link href="css/jquery.mobile.theme-1.3.1.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.mobile.structure-1.3.1.css" rel="stylesheet" type="text/css"/>
+
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.3.1.js" type="text/javascript"></script>
+
+
+
+</head> 
+<body> 
+
+<div  data-role="page" data-theme="d" id="rep_ger">
+    <div data-role="header" data-theme="b">
+        <h1>Actividades</h1>
+        <a href="#left-panel" data-theme="b" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc"  >Opciones</a>
+        <a href="#right-panel" data-theme="b" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">OT</a>
+    </div><!-- /header -->
+    <div data-role="content" id="contenido">
+         <form action="" method="get" >
+        	<label for="cc" >Actividad</label>
+            <select id="rep_act" name="rep_act" >
+            <option value="2"> Cambio de Bombillo</option>
+            <option value="4"> Cambio de Fotocelda</option>
+            <option value="6"> Limpieza de Redes</option>
+            <option value="7"> Empalme de Lineas</option>
+            <option value="10"> Despeje de Luminaria</option>
+            <option value="14"> Trabajo Seguro</option>
+            </select>
+            
+            <input id="add_and_refresh" data-role="button" data-icon="plus" data-theme="b" value="Agregar Actividad" type="button" >
+           </form>
+        <table align="center" class="ui-responsive table-stroke" id="table-reflow" data-role="table">
+  <thead>
+    <tr>
+      <th data-priority="2">Codigo</th>
+      <th>Actividad</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>01</th>   
+      <td>Cambio de Bombillo</td>
+    </tr>
+    <tr>
+      <th>11</th>   
+      <td>Cambio de Fotocelda</td>
+    </tr>
+    <tr>
+      <th>18</th>   
+      <td>Limpieza de Redes</td>
+    </tr>
+    
+      
+  </tbody>
+</table>
+
+
+        
+        </div><!-- /content -->
+        
+     <div data-role="footer" data-position="fixed" class="ui-bar">
+		<a href="index2.html" data-role="button" data-icon="back">Menu</a>
+		
+	</div>
+     
+     
+    <div data-role="panel" id="left-panel" data-theme="b">
+        
+      <ul data-role="listview">
+			<li><a href="rep.html" >General</a></li>
+            <li><a href="rep_act.html" >Actividades</a></li>
+            <li><a href="rep_trafo.html">Trafo</a></li>
+            <li><a href="rep_lumi.html">Luminaria</a></li>
+            <li><a href="rep_consumo.html">Consumo</a></li>
+            <li><a href="rep_retiro.html">Retiro</a></li>
+            <li><a href="rep_nodo.html">Nodo</a></li>
+		</ul>
+        
+    </div><!-- /panel -->
+    
+    
+    <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
+       
+       <ul data-role="listview" data-icon="arrow-l" >
+			<li><a href="rep.html">801123</a></li>
+            <li><a href="rep.html">802123</a></li>
+            <li><a href="rep.html">803123</a></li>
+            <li><a href="rep.html">804123</a></li>
+            <li><a href="rep.html">805123</a></li>
+            <li><a href="rep.html">806123</a></li>
+            <li><a href="rep.html">805123</a></li>
+		</ul>
+       
+    </div><!-- /panel -->
+    
+</div>
+
+
+</body>
+</html>

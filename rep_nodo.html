@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>GeoApsoft Movil 1.0</title>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<link href="css/jquery.mobile.theme-1.3.1.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.mobile.structure-1.3.1.css" rel="stylesheet" type="text/css"/>
+
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.3.1.js" type="text/javascript"></script>
+
+
+
+</head> 
+<body> 
+
+<div  data-role="page" data-theme="d" id="rep_ger">
+    <div data-role="header" data-theme="b">
+        <h1>Nodos</h1>
+        <a href="#left-panel" data-theme="b" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc"  >Opciones</a>
+        <a href="#right-panel" data-theme="b" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">OT</a>
+    </div><!-- /header -->
+    <div data-role="content" id="contenido">
+        
+        <form action="" method="get" >
+        
+        	<label for="idface" >Fases</label>
+            <select id="idface" name="idface">
+            <option value="1"> F1-F2</option>
+            <option value="2"> F2-F3</option>
+            <option value="6"> F1-F3</option>
+            
+            </select>
+        	<label for="tap1" >Tap Actual</label>
+            <input type="text" id="tap1" name="tap1" >
+        	<label for="tap2" >Cambio Tap</label>
+            <input type="text" id="tap2" name="tap2" >
+            <label for="nodo" >Nodo</label>
+             <input type="text" id="nodo" name="nodo" >
+              <input id="and_trafo" data-role="button" data-icon="plus" data-theme="b" value="Guardar" type="button" >
+              
+        </form>
+      <br>
+      <br>
+        
+        </div><!-- /content -->
+        
+     <div data-role="footer" data-position="fixed" class="ui-bar">
+		<a href="index2.html" data-role="button" data-icon="back">Menu</a>
+		
+	</div>
+     
+     
+    <div data-role="panel" id="left-panel" data-theme="b">
+        
+      <ul data-role="listview">
+			<li><a href="rep_nodo.html">120123-70 NA</a></li>
+            <li><a href="rep_nodo.html">120124-70 NA</a></li>
+            <li><a href="rep_nodo.html">120125-150 NA</a></li>
+            <li><a href="rep_nodo.html">120126-150 NA</a></li>
+            <li><a href="rep_nodo.html">120127-250 NA</a></li>
+		</ul>
+        
+    </div><!-- /panel -->
+    
+    
+    <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
+       
+       <ul data-role="listview" data-icon="arrow-l" >
+			<li><a href="rep.html" >General</a></li>
+            <li><a href="rep_act.html" >Actividades</a></li>
+            <li><a href="rep_trafo.html">Trafo</a></li>
+            <li><a href="rep_lumi.html">Luminaria</a></li>
+            <li><a href="rep_consumo.html">Consumo</a></li>
+            <li><a href="rep_retiro.html">Retiro</a></li>
+            <li><a href="rep_nodo.html">Nodo</a></li>
+		</ul>
+       
+    </div><!-- /panel -->
+    
+</div>
+
+ <div id="codigos" data-role="dialog">
+        <div data-role="header">
+            <h1>Codigos Cargadas</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+			<li>101123AA - Bombilla NA 70</li>
+            <li>102123AA - Bombilla NA 70</li>
+            <li>103123AA - Bombilla NA 70</li>
+            <li>104123AA - Bombilla NA 70</li>
+            <li>105123AA - Bombilla NA 70</li>
+            <li>106123AA - Bombilla NA 70</li>
+            <li>105123TT - FOTOCELDA ELECT.</li>
+		</ul>
+        </div>
+    </div>
+    
+  <div id="materiales" data-role="dialog">
+        <div data-role="header">
+            <h1>Materiales Cargados</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+			<li>00000 - Tipo A - 100 - ALAMBRE CU THHN #14</li>
+           
+		</ul>
+        </div>
+    </div>
+
+</body>
+</html>
